@@ -21,7 +21,11 @@ const resolvers={
         },
         authors(){
             return _db.authors
+        },
+        review(_,args){
+            return _db.reviews.find((review)=>review.id===args.id)
         }
+
     }
 }
 const server=new ApolloServer({
