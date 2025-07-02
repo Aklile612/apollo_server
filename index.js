@@ -17,7 +17,7 @@ const resolvers={
             return _db.games
         },
         game(_,args){
-            return _db.reviews.find((game)=>game.id===args.id)
+            return _db.games.find((game)=>game.id===args.id)
         },
         reviews(){
             return _db.reviews
@@ -29,7 +29,7 @@ const resolvers={
             return _db.authors
         },
         author(_,args){
-            return _db.reviews.find((author)=>author.id===args.id)
+            return _db.authors.find((author)=>author.id===args.id)
         }
     }
 }
