@@ -4,9 +4,9 @@ import { startStandaloneServer } from "@apollo/server/standalone";
 
 //typeDefs
 
-import { typeDefs } from "./schema";
+import { typeDefs } from "./schema.js";
 
-import _db from "./_db";
+import _db from "./_db.js";
 
 //server setup
 
