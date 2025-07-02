@@ -63,4 +63,4 @@ let games = [
       gameId: "5"
     }
   ];
-  
+export default {games,authors,reviews}
