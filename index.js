@@ -51,6 +51,7 @@ const resolvers={
         },
     },
     Mutation:{
+        
         deleteGame(_,args){
             _db.games=_db.games.filter((g)=> g.id !== args.id)
 
