@@ -16,16 +16,21 @@ const resolvers={
         games(){
             return _db.games
         },
+        game(_,args){
+            return _db.reviews.find((game)=>game.id===args.id)
+        },
         reviews(){
             return _db.reviews
+        },
+        review(_,args){
+            return _db.reviews.find((review)=>review.id===args.id)
         },
         authors(){
             return _db.authors
         },
-        review(_,args){
-            return _db.reviews.find((review)=>review.id===args.id)
+        author(_,args){
+            return _db.reviews.find((author)=>author.id===args.id)
         }
-
     }
 }
 const server=new ApolloServer({
