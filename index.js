@@ -49,6 +49,13 @@ const resolvers={
         game(parent){
             return _db.games.find((g)=>g.id===parent.gameId)
         },
+    },
+    Mutation:{
+        deleteGame(_,args){
+            _db.games=_db.games.filter((g)=> g.id !== args.id)
+
+            return _db.games
+        }
     }
 }
 const server=new ApolloServer({
