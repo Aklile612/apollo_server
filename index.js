@@ -62,6 +62,8 @@ const resolvers={
                 ...args.game,
                 id: Math.floor(Math.random()*10000).toString()
             }
+            _db.games.push(game)
+            return game
         }
     }
 }
