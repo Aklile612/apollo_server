@@ -41,6 +41,14 @@ const resolvers={
         reviews(parent){
             return _db.reviews.filter((r)=>r.authorId===parent.id)
         }
+    },
+    Review:{
+        author(parent){
+            return _db.authors.find((a)=>a.id===parent.authorId)
+        },
+        game(parent){
+            return _db.games.find((g)=>g.id===parent.gameId)
+        },
     }
 }
 const server=new ApolloServer({
