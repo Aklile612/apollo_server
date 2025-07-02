@@ -15,6 +15,12 @@ const resolvers={
     Query:{
         games(){
             return _db.games
+        },
+        reviews(){
+            return _db.reviews
+        },
+        authors(){
+            return _db.authors
         }
     }
 }
