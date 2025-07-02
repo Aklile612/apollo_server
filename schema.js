@@ -3,7 +3,7 @@ export const typeDefs=`#graphql
         id:ID!
         title: String!
         platform: [String!]!
-        review:[Review!]
+        reviews:[Review!]   
 
     }
     type Review {
