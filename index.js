@@ -39,7 +39,7 @@ const resolvers={
     },
     Author:{
         reviews(parent){
-            return _db.reviews.filter((r)=>r.gameId===parent.id)
+            return _db.reviews.filter((r)=>r.authorId===parent.id)
         }
     }
 }
