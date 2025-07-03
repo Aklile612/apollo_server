@@ -22,7 +22,7 @@ let games = [
     },
     {
       id: "2",
-      rating: 10,
+      rating: 5,
       content: "A masterpiece in open-world gaming.",
       authorId: "2",
       gameId: "2"
