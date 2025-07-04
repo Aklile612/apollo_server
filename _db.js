@@ -16,7 +16,7 @@ let games = [
     {
       id: "1",
       rating: 9,
-      content: "Amazing world and deep lore.",
+      content: "Amazing world and deep lore. Boring",
       authorId: "1",
       gameId: "1"
     },
